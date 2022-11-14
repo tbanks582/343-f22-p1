@@ -7,14 +7,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="stylesheet" href="style-4.css">
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+        <link rel="stylesheet" href="styles/style-4.css">
+        <link rel="stylesheet" href="styles/style.css"/>
+        <link rel="stylesheet" href="styles/thankschris.css"/>
+        <link rel="stylesheet" href="styles/stattable.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <script src="scripts.js"></script>
         <title>Stats</title>
     </head>
 <body>
-    <nav class="style-4">
+  <img src="images/favicon.ico" id="logo">
+  <nav class="style-4">
 		<ul class="menu-4">
 		  <li><a href="index.html" data-hover="Home">Home</a></li>
 		  <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-hover="About Us">About Us</a></li>
@@ -24,5 +27,70 @@
 		  <li><a href="login.html" data-hover="Login">Login</a></li>
 		</ul>
 	</nav>
+  <div class="searchtools">
+    <nav>
+      <ul class="menus">
+      <li class="menu">
+        <div class="menu-heading">Last 7 Days</div>
+          <ul class="menu-items">
+            <li class="menu-item"><a href="#">Last 2 Weeks</a></li>
+            <li class="menu-item"><a href="#">Last Month</a></li>
+            <li class="menu-item"><a href="#">Last 6 Months</a></li>
+            <li class="menu-item"><a href="#">All Time</a></li>
+          </ul>
+      </li>
+    </ul>
+    </nav>
+    <input type="text" name="search" id="topsearch">
+    <button><img src="mag.png"></button>
+  </div>
+
+  <div class="stattable">
+    <table id="print">
+      <tr>
+        <th>Champion</th>
+        <th>Win Rate</th>
+        <th>Pick Rate</th>
+        <th>KDA Ratio</th>
+      </tr>
+      <tr>
+        <td>Nasus</td>
+        <td>51.85%</td>
+        <td>4.96%</td>
+        <td>3.21</td>
+      </tr>
+      <tr>
+        <td>Yasuo</td>
+        <td>48.88%</td>
+        <td>7.57%</td>
+        <td>3.86</td>
+      </tr>
+      <tr>
+        <td>Blitzcrank</td>
+        <td>51.9</td>
+        <td>8.63%</td>
+        <td>4.10</td>
+      </tr>
+      <tr>
+        <td>Fiora</td>
+        <td>50.44%</td>
+        <td>8.65%</td>
+        <td>3.69</td>
+      </tr>
+      <tr>
+        <td>Sett</td>
+        <td>50.27%</td>
+        <td>6.78%</td>
+        <td>3.55</td>
+      </tr>
+        <!--<script>printStats()</script> no js allowed :C-->
+    </table>
+  </div>
+  <div class="searchtools">
+    <button>Previous</button>
+    
+    <div style="flex-basis: 18%;"></div>
+    <button>Next</button>
+  </div>
 </body>
 </html>

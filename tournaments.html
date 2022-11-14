@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="style-4.css">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/style-4.css">
+    <link rel="stylesheet" href="styles/style.css"/>
+	<link rel="stylesheet" href="styles/stattable.css">
+	<link rel="stylesheet" href="styles/tree.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>Tournaments</title>
 </head>
 <body>
+	<img src="images/favicon.ico" id="logo">
     <nav class="style-4">
 		<ul class="menu-4">
 		  <li><a href="index.html" data-hover="Home">Home</a></li>
@@ -22,84 +25,68 @@
 		</ul>
 	</nav>
 	<div class="bannerdiv">
-        <img class="homebanner" src="aui2k.png" alt="picure of tundra esports lifting the aegis of the immortal after winning ti 2022 with tournaments written over it. credit: liquipedia.net">
+        <img class="homebanner" src="images/aui2k.png" alt="picure of tundra esports lifting the aegis of the immortal after winning ti 2022 with tournaments written over it. credit: liquipedia.net">
     </div>
 	<h1 class="largeheader"><u>Current Tournament:</u></h1>
-	<div class="bracketcontainer">
-		<div class="tourneyitem2">
-			<div class="tourneystep">
-				<div class="tourneypair toruneyitem2">
-					<div class="tourneystep">
-						<div class="tourneypair toruneyitem2">
-							<div class="tourneyitem2 start">
-								<p>team1</p>
-							</div>
-							<div class="tourneyitem2 start">
-								<p>team2</p>
-							</div>
-						</div>
-						<div class="winner tourneyitem2">
-							<p>first round winner1</p>
-							<a href="https://www.op.gg/summoners/na/opalcloudlet">matches played:</a>
-						</div>
-					</div>
-					<div class="tourneystep tourneyitem2">
-						<div class="tourneypair tourneyitem2">
-							<div class="tourneyitem2 start">
-								<p>team4</p>
-							</div>
-							<div class="tourneyitem2 start">
-								<p>team4</p>
-							</div>
-						</div>	
-						<div class="winner tourneyitem2">
-							<p>first round winner2</p>
-							<a href="https://www.op.gg/summoners/na/opalcloudlet">matches played:</a>
-						</div>	
-					</div>
-				</div>
-				<div class="winner tourneyitem2">
-					<p class="largeheader">Second Round Winner</p>
-					<a href="https://www.op.gg/summoners/na/opalcloudlet">matches played:</a>
-				</div>
-			</div>
-		</div>
+	<div class="treewrapper">
+		<div class="spacer"></div>
+		<ul class="tree">
+			<li><code>Winner: TBD</code>
+				<ul>
+					<li><code>team1</code>
+						<ul>
+							<li><code>team1</code></li>
+							<li><code>team3</code></li>
+						</ul>
+					</li>
+					<li><code>team2</code>
+						<ul>
+							<li><code>team2</code></li>
+							<li><code>team4</code></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="spacer"></div>
 	</div>
 	<h1 class="largeheader"><u>Tournament Schedule:</u></h1>
-	<div class="schedule">
+	<div class="schedule stattable">
 		 <!-- this would be way easier to write with js-->
 		<table>
-			<colgroup>
-			  <col />
-			  <col style="background-color: yellow" />
-			</colgroup>
 			<tr>
-			  <th>last week</th>
-			  <th>this week</th>
-			  <th>next week</th>
-			  <th>future</th>
+			  <th>LAST WEEK</th>
+			  <th>THIS WEEK</th>
+			  <th>NEXT WEEK</th>
+			  <th>FUTURE</th>
 			</tr>
 			<tr>
-			  <td>Calcutta</td>
-			  <td>Orange</td>
-			  <td>asd</td>
-			  <td>123</td>
+			  <td><a href="https://liquipedia.net/leagueoflegends/World_Championship/2022">tourney1</a></td>
+			  <td><a href="https://liquipedia.net/leagueoflegends/World_Championship/2022">tourney1</a></td>
+			  <td><a href="https://liquipedia.net/leagueoflegends/World_Championship/2022">tourney1</a></td>
+			  <td><a href="https://liquipedia.net/leagueoflegends/World_Championship/2022">tourney1</a></td>
 			</tr>
 			<tr>
-			  <td>Robots</td>
-			  <td>Jazz</td>
-			  <td>oy</td>
-			  <td>vey</td>
+				<td><a href="https://liquipedia.net/leagueoflegends/World_Championship/2022">tourney2</a></td>
+				<td><a href="https://liquipedia.net/leagueoflegends/World_Championship/2022">tourney2</a></td>
+				<td><a href="https://liquipedia.net/leagueoflegends/World_Championship/2022">tourney2</a></td>
+				<td><a href="https://liquipedia.net/leagueoflegends/World_Championship/2022">tourney2</a></td>
 			</tr>
 			<tr>
-			  <td>Robots</td>
-			  <td>Jazz</td>
-			  <td>oy</td>
-			  <td>vey</td>
+				<td><a href="https://liquipedia.net/leagueoflegends/World_Championship/2022">tourney3</a></td>
+				<td><a href="https://liquipedia.net/leagueoflegends/World_Championship/2022">tourney3</a></td>
+				<td><a href="https://liquipedia.net/leagueoflegends/World_Championship/2022">tourney3</a></td>
+				<td><a href="https://liquipedia.net/leagueoflegends/World_Championship/2022">tourney3</a></td>
+			</tr>
+			<tr>
+				<td style="border: 3px inset #E81C2B;"><a href="https://liquipedia.net/leagueoflegends/Main_Page">archive</a></td>
+				<td></td>
+				<td></td>
+				<td style="border: 3px inset #E81C2B;"><a style="padding:0;margin:0;" href="https://liquipedia.net/leagueoflegends/Main_Page">full schedule</a></td>
 			</tr>
 		  </table>
 		  
 	</div>
-	<h1 class="largeheader"><u>padding for comfort</u></h1>
+	
 </body>
 </html>

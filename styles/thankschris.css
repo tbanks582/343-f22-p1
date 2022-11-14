@@ -1,0 +1,62 @@
+/*
+    i jacked this stylesheet from https://allover.twodee.org/position/dropdown-menus/
+*/
+
+nav.menu {
+  background-color: #e7e9ea;
+  color: black;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  
+}
+
+.menus {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.menus, .menu-items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu-heading, .menu-item > a {
+  padding: 5px 10px;
+}
+
+.menu-heading {
+  border: 1px solid gray;
+}
+
+.menu-item {
+  border: 1px solid black;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-items {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: #e7e9ea;
+}
+
+.menu:hover > .menu-items {
+  display: block;
+  background-color #a2a3a4: 
+}
+
+.menu-item:hover, .menu:hover > .menu-heading {
+  background-color: #a2a3a4;
+}
+
+.menu-item > a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
